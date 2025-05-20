@@ -48,45 +48,45 @@ Before running the FreeSound CLI, ensure you have Python 3.11 or newer installed
 ```bash
 git clone [https://github.com/luklongman/freesound-cli-prototype.git](https://github.com/luklongman/freesound-cli-prototype.git)
 cd freesound-cli-prototype
+```
 
 ### 2. Set up a virtual environment (recommended):
-Bash
 
+```Bash
 python -m venv venv
 source venv/bin/activate # On Windows: .\venv\Scripts\activate
+```
 
-3. Install project dependencies:
+### 3. Install project dependencies:
 
 This project uses a requirements.txt file to manage its dependencies. Install them using pip:
-Bash
 
+```Bash
 pip install -r requirements.txt
+```
 
 This will install all required packages including requests, python-dotenv, rich, sounddevice, soundfile, and numpy.
-4. Obtain a FreeSound API Key:
+### 4. Obtain a FreeSound API Key:
 
-    Go to the FreeSound Developers website.
+* Go to the FreeSound Developers website.
+* Create a new application to obtain your API key.
+* Create a file named .env in the root directory of the project (where requirements.txt is located).
+* Add your API key to the .env file in the following format:
+```
+FREESOUND_API_KEY=your_actual_api_key_here
+```
 
-    Create a new application to obtain your API key.
-
-    Create a file named .env in the root directory of the project (where requirements.txt is located).
-
-    Add your API key to the .env file in the following format:
-
-    FREESOUND_API_KEY=your_actual_api_key_here
-
-5. Install PortAudio:
+### 5. Install PortAudio:
 
 sounddevice relies on PortAudio. You'll need to install it separately depending on your operating system.
-
-    macOS (using Homebrew):
-    Bash
-
+macOS (using Homebrew):
+```Bash
 brew install portaudio
+```
 
 Debian/Ubuntu:
-Bash
+```Bash
+sudo apt-get install libportaudio2
+```
 
-    sudo apt-get install libportaudio2
-
-    Windows: You might need to download the PortAudio binaries and place them in your system's PATH or in the same directory as your Python script. Refer to the python-sounddevice documentation for more detailed instructions specific to Windows.
+Windows: You might need to download the PortAudio binaries and place them in your system's PATH or in the same directory as your Python script. Refer to the python-sounddevice documentation for more detailed instructions specific to Windows.
