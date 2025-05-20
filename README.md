@@ -1,13 +1,15 @@
-Markdown
-
 # FreeSound CLI (Prototype)
 
-Date: May 20, 2025 (Tue)
+Date: May 20, 2025 (Tue)  
 Version: Prototype
+
+
+https://github.com/user-attachments/assets/dd16a03d-7310-4eb0-8c4c-48a5ef04a3dd
+
 
 ## Overview
 
-This project provides a command-line interface (CLI) to browse, preview, inspect, and download sounds from FreeSound.org. It's built with Python and utilizes `rich` for a visually appealing console experience and `sounddevice` for audio playback.
+This project provides a command-line interface (CLI) to browse, preview, inspect, and download sounds from FreeSound.org. It's built with Python and utilizes `rich` for a user-friendly console experience and `sounddevice` for audio playback.
 
 ### Main Features:
 * **Query**: Search for sounds using keywords.
@@ -80,5 +82,3 @@ Bash
     sudo apt-get install libportaudio2
 
     Windows: You might need to download the PortAudio binaries and place them in your system's PATH or in the same directory as your Python script. Refer to the python-sounddevice documentation for more detailed instructions specific to Windows.
-
-<!-- end list -->
