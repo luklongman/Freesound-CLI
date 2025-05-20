@@ -11,12 +11,15 @@ https://github.com/user-attachments/assets/dd16a03d-7310-4eb0-8c4c-48a5ef04a3dd
 
 This project provides a command-line interface (CLI) to browse, preview, inspect, and download sounds from FreeSound.org. It's built with Python and utilizes `rich` for a user-friendly console experience and `sounddevice` for audio playback.
 
+## Freesound API documentation
+https://freesound.org/docs/api/
+
 ### Main Features:
 * **Query**: Search for sounds using keywords.
 * **Paginate**: Navigate through search results page by page.
 * **Preview**: Play MP3 previews of sounds directly in the terminal, with seeking capabilities.
-* **Sound Inspection**: View detailed information about a selected sound.
-* **Download Sounds**: Download high-quality MP3 previews of sounds.
+* **Inspect**: View detailed information about a selected sound.
+* **Download**: Download MP3 previews of sounds.
 
 ### Commands:
 * `play #` or `p #`:      Play a sound by index.
@@ -30,6 +33,11 @@ This project provides a command-line interface (CLI) to browse, preview, inspect
 * `restart` or `r`:       Start a new search.
 * `quit` or `q`:          Exit the application.
 * `clear` or `c`:         Clear the console screen.
+
+## What's next:
+* To-do: Option for OAuth2 Authentication in addition to Token Authentication.
+* To-do: Original file download.
+* To-do: Options for Audio analysis.
 
 ## Installation and Prerequisites
 
