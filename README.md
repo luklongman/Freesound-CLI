@@ -1,4 +1,4 @@
-# FreeSound CLI (Prototype)
+# Freesound CLI (Prototype)
 
 Date: May 20, 2025 (Tue)  
 Version: Prototype
